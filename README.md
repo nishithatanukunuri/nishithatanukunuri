@@ -6,11 +6,11 @@ GenAI and AI agents engineer, full stack. Lead AI Engineer at AI20 Labs, where I
 
 ## What I build
 
-- **LLM orchestration and routing**: Cloudflare Workers + Durable Objects router deciding per request whether inference runs on a registered edge device or cloud fallback, with WebSocket device sessions and an OpenAI-compatible API surface.
-- **Model serving**: ~20 TypeScript model-serving services on Fly.io (Llama 3.1, Phi-4, Qwen3, GLiNER, DistilBART) with autoscaling batch variants.
+- **LLM orchestration and routing**: the routing layer on Cloudflare that decides where every AI request runs, on an edge device or in the cloud, behind an OpenAI-compatible API.
+- **Model serving**: purpose-built small and nano language models (Llama 3.1, Phi-4, Qwen3, GLiNER, DistilBART) served through one OpenAI-compatible API.
 - **MCP servers**: shipped Model Context Protocol servers over business analytics and bank regulatory data, plus contributions to the [ZeroGPU MCP router](https://github.com/zerogpu/zerogpu-router).
 - **Developer tooling**: [langchain-zerogpu](https://pypi.org/project/langchain-zerogpu/) ([source](https://github.com/zerogpu/langchain-zerogpu)), a Python package exposing ZeroGPU as 11 LangChain tools; cookbook tutorials on [docs.zerogpu.ai](https://docs.zerogpu.ai).
-- **Full stack AI products**: Next.js dashboards with Stripe usage billing, Supabase auth, SSE-streaming LLM chat over MongoDB aggregation pipelines (980,000+ records).
+- **Full stack AI products**: Next.js dashboards with usage-based Stripe billing, and an LLM chat assistant that answers questions over 980,000+ records in plain English.
 
 ## Stack
 
